@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鉴黄师下载官网-鉴黄师软件下载_内容审核工具_鉴黄师工作台_审核员入门_图片识别软件_鉴黄师电脑版</title>
+<meta name="description" content="鉴黄师下载官网：内容审核与鉴黄师工作台的软件下载与使用说明，涵盖图片识别、人工复核流程、审核员入门与电脑版安装指引，帮助访问者了解鉴黄师软件的功能范围与下载方式。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23112440'/%3E%3Ccircle cx='32' cy='32' r='15' fill='none' stroke='%23ffb347' stroke-width='5'/%3E%3Cpath d='M32 17v30M17 32h30' stroke='%23ffb347' stroke-width='3' opacity='.5'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#12233c;
+  --ink-soft:#3a4d68;
+  --muted:#6b7c93;
+  --paper:#f6f8fb;
+  --card:#ffffff;
+  --line:#dde5ef;
+  --accent:#e8743b;
+  --accent-soft:#fdf0e8;
+  --brand:#132a4a;
+  --brand-2:#1e4470;
+  --radius:14px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand-2);text-decoration:none;}
+a:hover{color:var(--accent);}
+.wrap{width:min(1120px,92vw);margin:0 auto;}
+h1,h2,h3{line-height:1.35;margin:0;font-weight:700;letter-spacing:.3px;}
+p{margin:0 0 14px;}
+
+/* Header */
+header.site{
+  background:linear-gradient(160deg,var(--brand) 0%,var(--brand-2) 100%);
+  color:#eef4fb;
+  position:sticky;top:0;z-index:30;
+  box-shadow:0 2px 14px rgba(15,32,55,.18);
+}
+.hd-inner{
+  display:flex;align-items:center;gap:22px;
+  padding:14px 0;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem;color:#fff;}
+.logo svg{flex:0 0 auto;}
+nav.main{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto;}
+nav.main a{
+  color:#c9d8ea;font-size:.92rem;padding:6px 11px;border-radius:8px;
+  transition:background .2s,color .2s;
+}
+nav.main a:hover{background:rgba(255,255,255,.12);color:#fff;}
+.hd-cta{
+  background:var(--accent);color:#fff;padding:8px 16px;border-radius:9px;
+  font-size:.92rem;font-weight:600;white-space:nowrap;
+}
+.hd-cta:hover{background:#f0854f;color:#fff;}
+
+/* Hero */
+.hero{
+  background:
+    radial-gradient(circle at 88% 12%,rgba(232,116,59,.16),transparent 55%),
+    linear-gradient(180deg,#eef3f9 0%,var(--paper) 100%);
+  padding:52px 0 44px;
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;}
+.eyebrow{
+  display:inline-block;font-size:.8rem;letter-spacing:2px;color:var(--accent);
+  font-weight:700;margin-bottom:12px;text-transform:uppercase;
+}
+h1{font-size:clamp(1.7rem,3.4vw,2.5rem);color:var(--brand);margin-bottom:16px;}
+.hero p.lead{font-size:1.02rem;color:var(--ink-soft);max-width:38em;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:10px;font-weight:600;font-size:.96rem;
+  border:1px solid transparent;transition:transform .18s,box-shadow .18s,background .18s;
+}
+.btn-primary{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(232,116,59,.28);}
+.btn-primary:hover{background:#f0854f;color:#fff;transform:translateY(-1px);}
+.btn-ghost{background:#fff;color:var(--brand);border-color:var(--line);}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+.btn[aria-disabled="true"]{cursor:default;}
+.meta-row{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px;font-size:.86rem;color:var(--muted);}
+.meta-row b{color:var(--brand);font-weight:700;}
+
+.hero-art{
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:20px;box-shadow:0 14px 36px rgba(19,42,74,.09);
+}
+.hero-art svg{display:block;width:100%;height:auto;}
+
+/* Sections */
+section{padding:46px 0;}
+.sec-head{margin-bottom:26px;max-width:46em;}
+.sec-head h2{font-size:clamp(1.25rem,2.2vw,1.6rem);color:var(--brand);margin-bottom:8px;}
+.sec-head p{color:var(--muted);font-size:.95rem;margin:0;}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;display:flex;flex-direction:column;gap:8px;
+  transition:box-shadow .2s,transform .2s,border-color .2s;
+}
+.card:hover{box-shadow:0 12px 28px rgba(19,42,74,.08);transform:translateY(-2px);border-color:#c9d7e8;}
+.card .ico{
+  width:42px;height:42px;border-radius:11px;background:var(--accent-soft);
+  display:flex;align-items:center;justify-content:center;margin-bottom:4px;
+}
+.card h3{font-size:1.02rem;color:var(--brand);}
+.card p{font-size:.9rem;color:var(--ink-soft);margin:0;}
+
+/* Flow */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:step;}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:20px 18px;position:relative;
+}
+.step::before{
+  counter-increment:step;content:"0" counter(step);
+  font-size:.78rem;font-weight:700;color:var(--accent);letter-spacing:1px;
+  display:block;margin-bottom:8px;
+}
+.step h3{font-size:.98rem;margin-bottom:6px;color:var(--brand);}
+.step p{font-size:.88rem;color:var(--ink-soft);margin:0;}
+
+/* Split content */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:start;}
+.prose p{color:var(--ink-soft);font-size:.96rem;}
+.prose strong{color:var(--brand);}
+.panel{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;
+}
+.panel h3{font-size:1rem;color:var(--brand);margin-bottom:12px;}
+.checklist{list-style:none;padding:0;margin:0;display:grid;gap:10px;}
+.checklist li{
+  font-size:.9rem;color:var(--ink-soft);padding-left:26px;position:relative;
+}
+.checklist li::before{
+  content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;
+  border-radius:3px;background:var(--accent-soft);border:2px solid var(--accent);
+}
+
+/* FAQ */
+.faq{display:grid;gap:12px;}
+details{
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:16px 20px;
+}
+details[open]{border-color:#c9d7e8;}
+summary{
+  cursor:pointer;font-weight:600;font-size:.96rem;color:var(--brand);
+  list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+}
+summary::-webkit-details-marker{display:none;}
+summary::after{content:"+";color:var(--accent);font-weight:700;font-size:1.1rem;}
+details[open] summary::after{content:"−";}
+details p{margin:12px 0 0;font-size:.9rem;color:var(--ink-soft);}
+
+/* Download block */
+.dl{
+  background:linear-gradient(160deg,var(--brand) 0%,var(--brand-2) 100%);
+  color:#eaf2fb;border-radius:20px;padding:40px;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;
+}
+.dl h2{color:#fff;font-size:clamp(1.25rem,2.2vw,1.55rem);margin-bottom:10px;}
+.dl p{color:#c3d4e7;font-size:.94rem;margin-bottom:18px;}
+.dl .btn-primary{box-shadow:none;}
+.dl-notes{display:grid;gap:8px;font-size:.85rem;color:#a9bfd8;}
+.dl-notes span{display:flex;gap:8px;align-items:flex-start;}
+.dl-notes b{color:#fff;font-weight:600;}
+
+/* Footer */
+footer.site{
+  background:#0e1d33;color:#8fa6bf;padding:34px 0 26px;font-size:.85rem;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;}
+footer.site .logo{color:#fff;margin-bottom:10px;font-size:.98rem;}
+footer.site a{color:#a9c0d8;}
+footer.site a:hover{color:#fff;}
+.ft-col h4{color:#dbe7f3;font-size:.86rem;margin:0 0 10px;font-weight:600;letter-spacing:.5px;}
+.ft-col ul{list-style:none;padding:0;margin:0;display:grid;gap:7px;font-size:.84rem;}
+.ft-bottom{
+  margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.8rem;color:#6f89a5;
+}
+
+@media (max-width:900px){
+  .hero-grid,.split,.dl{grid-template-columns:1fr;}
+  .cards{grid-template-columns:1fr 1fr;}
+  .flow{grid-template-columns:1fr 1fr;}
+  .ft-grid{grid-template-columns:1fr 1fr;}
+  .hero{padding:36px 0 30px;}
+  .hero-art{order:-1;max-width:420px;}
+}
+@media (max-width:600px){
+  body{font-size:15px;}
+  .hd-inner{gap:12px;}
+  nav.main{order:3;width:100%;margin-left:0;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px;}
+  nav.main a{white-space:nowrap;font-size:.86rem;}
+  .cards{grid-template-columns:1fr;}
+  .flow{grid-template-columns:1fr;}
+  .ft-grid{grid-template-columns:1fr;}
+  section{padding:34px 0;}
+  .dl{padding:26px 20px;}
+  .hero-actions .btn{width:100%;justify-content:center;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap hd-inner">
+    <div class="logo">
+      <svg width="30" height="30" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#ffffff" opacity=".1"/>
+        <circle cx="32" cy="32" r="15" fill="none" stroke="#ffb347" stroke-width="5"/>
+        <circle cx="32" cy="32" r="5" fill="#ffb347"/>
+        <path d="M32 12v6M32 46v6M12 32h6M46 32h6" stroke="#ffb347" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+      </svg>
+      <span>鉴黄师下载官网</span>
+    </div>
+    <nav class="main" aria-label="主导航">
+      <a href="#features">功能概览</a>
+      <a href="#workflow">审核流程</a>
+      <a href="#guide">入门指引</a>
+      <a href="#faq">常见问题</a>
+      <a href="#download">下载说明</a>
+    </nav>
+    <a class="hd-cta" href="#download">获取软件</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">内容审核 · 鉴黄师工作台</span>
+        <h1>鉴黄师下载官网</h1>
+        <p class="lead">鉴黄师下载官网面向内容审核从业者与入门用户，集中说明鉴黄师软件的下载方式、图片识别与人工复核流程、电脑版安装要点，以及审核员入门需要了解的基础知识。页面内容聚焦工具本身与使用路径，帮助访问者在下载前判断软件是否符合自己的审核场景。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+            前往下载说明
+          </a>
+          <a class="btn btn-ghost" href="#workflow">了解审核流程</a>
+        </div>
+        <div class="meta-row">
+          <span>软件形态：<b>电脑版工作台</b></span>
+          <span>核心能力：<b>图片识别 + 人工复核</b></span>
+          <span>适用对象：<b>审核员 / 内容团队</b></span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 250" role="img">
+          <rect x="0" y="0" width="360" height="250" rx="14" fill="#f2f6fb"/>
+          <rect x="22" y="22" width="316" height="26" rx="7" fill="#e2ebf5"/>
+          <circle cx="38" cy="35" r="4" fill="#e8743b"/>
+          <circle cx="52" cy="35" r="4" fill="#c9d7e8"/>
+          <circle cx="66" cy="35" r="4" fill="#c9d7e8"/>
+          <rect x="22" y="62" width="150" height="166" rx="10" fill="#ffffff" stroke="#dde5ef"/>
+          <rect x="36" y="78" width="122" height="72" rx="7" fill="#eef3f9"/>
+          <path d="M60 136l22-26 16 18 12-12 18 20z" fill="#c9d7e8"/>
+          <circle cx="76" cy="100" r="8" fill="#ffb347"/>
+          <rect x="36" y="162" width="94" height="8" rx="4" fill="#e2ebf5"/>
+          <rect x="36" y="180" width="70" height="8" rx="4" fill="#e2ebf5"/>
+          <rect x="36" y="198" width="104" height="8" rx="4" fill="#e2ebf5"/>
+          <rect x="188" y="62" width="150" height="76" rx="10" fill="#ffffff" stroke="#dde5ef"/>
+          <circle cx="214" cy="88" r="12" fill="none" stroke="#e8743b" stroke-width="3"/>
+          <path d="m222 96 8 8" stroke="#e8743b" stroke-width="3" stroke-linecap="round"/>
+          <rect x="240" y="78" width="80" height="7" rx="3.5" fill="#e2ebf5"/>
+          <rect x="240" y="92" width="58" height="7" rx="3.5" fill="#e2ebf5"/>
+          <rect x="206" y="110" width="114" height="7" rx="3.5" fill="#eef3f9"/>
+          <rect x="188" y="152" width="150" height="76" rx="10" fill="#ffffff" stroke="#dde5ef"/>
+          <rect x="204" y="168" width="42" height="10" rx="5" fill="#fdf0e8"/>
+          <rect x="256" y="168" width="42" height="10" rx="5" fill="#fdf0e8"/>
+          <rect x="204" y="186" width="118" height="7" rx="3.5" fill="#e2ebf5"/>
+          <rect x="204" y="200" width="90" height="7" rx="3.5" fill="#e2ebf5"/>
+          <rect x="204" y="214" width="66" height="7" rx="3.5" fill="#e2ebf5"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section id="features">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>鉴黄师软件主要功能分区</h2>
+        <p>鉴黄师下载官网按审核工作的实际环节组织功能说明，从识别到复核再到记录，每个分区解决一个具体问题。</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8743b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="m4 18 5-5 4 4 3-3 4 4"/></svg>
+          </div>
+          <h3>图片识别</h3>
+          <p>对批量图片进行初步筛查，把需要人工确认的内容单独列出，减少逐张翻看的时间消耗。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8743b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/></svg>
+          </div>
+          <h3>人工复核</h3>
+          <p>识别结果并非最终结论，审核员在复核界面逐条判断，保留人工决策环节，避免直接采信机器结果。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8743b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5"/></svg>
+          </div>
+          <h3>审核记录</h3>
+          <p>把每次复核的判断结果留存下来，便于团队回溯处理经过，也为后续规则调整提供依据。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8743b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3>规则配置</h3>
+          <p>按业务场景设置识别阈值与分类维度，不同内容类型可以分开处理，避免一刀切的判定方式。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8743b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19V9M12 19V5M19 19v-7"/></svg>
+          </div>
+          <h3>处理统计</h3>
+          <p>汇总当日处理量、复核通过率等基础数据，帮助审核员掌握进度，也方便团队安排人力。</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e8743b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          </div>
+          <h3>快捷键操作</h3>
+          <p>复核过程中可借助键盘快捷完成通过、标记与跳过，长时间审核时能明显减少鼠标切换的负担。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow -->
+  <section id="workflow" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>从导入到结论：一次完整审核的四步</h2>
+        <p>鉴黄师下载官网把工作流按顺序拆开，便于新审核员理解自己在每个环节需要做什么。</p>
+      </div>
+      <div class="flow">
+        <div class="step">
+          <h3>导入素材</h3>
+          <p>把待审图片按批次导入工作台，可选择文件夹或按任务分组，导入后系统自动进入识别队列。</p>
+        </div>
+        <div class="step">
+          <h3>机器初筛</h3>
+          <p>识别模块先给出初步分类，把疑似内容单独标记。初筛只负责缩小范围，不承担最终判定。</p>
+        </div>
+        <div class="step">
+          <h3>人工复核</h3>
+          <p>审核员逐条查看标记结果，结合业务规则作出通过、拦截或转交的判断，并填写必要的备注。</p>
+        </div>
+        <div class="step">
+          <h3>归档记录</h3>
+          <p>判断结果写入记录，形成可追溯的处理日志。团队据此复盘争议样本，调整识别阈值。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide / split -->
+  <section id="guide">
+    <div class="wrap split">
+      <div class="prose">
+        <div class="sec-head" style="margin-bottom:16px;">
+          <h2>审核员入门需要准备什么</h2>
+        </div>
+        <p>很多访问者第一次接触<strong>鉴黄师下载官网</strong>，关心的是自己是否适合这份工作。审核岗位对设备要求不高，一台能稳定运行的电脑、一块清晰的屏幕和相对安静的环境就够用；真正的门槛在于对规则的理解与长时间保持判断一致。</p>
+        <p>建议在正式上手前，先通读团队提供的审核规范，明确哪些内容属于拦截范围、哪些属于灰度地带。灰度样本最考验经验，遇到拿不准的情况，按流程转交而不是凭感觉放行，是审核员应养成的基本习惯。</p>
+        <p>心理调节同样重要。审核工作会持续接触大量边界内容，合理安排班次、控制单次连续工作时长，有助于维持判断力。多数内容团队会设置轮岗与休息机制，新人在入门阶段可以主动了解这些安排。</p>
+        <p>本站作为<strong>鉴黄师下载官网</strong>，提供的是软件下载与使用说明层面的信息，不涉及具体招聘与薪酬承诺。软件能辅助提效，但最终结论仍由人来作出，这一点在鉴黄师相关工具的使用中始终成立。</p>
+      </div>
+      <aside class="panel">
+        <h3>上手前的自查清单</h3>
+        <ul class="checklist">
+          <li>确认电脑系统版本满足工作台运行要求</li>
+          <li>已阅读并理解团队的审核规则文档</li>
+          <li>熟悉通过、拦截、转交三类判断的适用场景</li>
+          <li>了解复核记录的填写方式与备注规范</li>
+          <li>安排合理的单次审核时长与休息间隔</li>
+          <li>遇到争议样本时知道向谁转交</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:#fff;border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>关于鉴黄师下载官网的常见问题</h2>
+        <p>以下问题来自访问者在了解鉴黄师软件时最常提出的疑问，回答范围限于页面可说明的内容。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>鉴黄师软件是做什么的？</summary>
+          <p>它是一款面向内容审核场景的桌面工作台，主要承担图片初筛、人工复核与处理记录三项工作。软件不替代审核员的判断，而是把需要关注的内容整理出来，让复核更集中。</p>
+        </details>
+        <details>
+          <summary>在鉴黄师下载官网能获取到什么？</summary>
+          <p>本站提供软件的功能说明、审核流程介绍、入门指引与下载入口。下载入口目前处于待替换状态，后续将指向正式安装包地址，届时页面会同步更新说明。</p>
+        </details>
+        <details>
+          <summary>软件支持哪些系统？</summary>
+          <p>页面以电脑版工作台为说明重点，适用于常见的桌面操作系统。具体版本要求以安装包发布时附带的说明为准，建议下载前先核对系统版本。</p>
+        </details>
+        <details>
+          <summary>识别结果可以直接作为结论吗？</summary>
+          <p>不建议。机器识别负责缩小范围，人工复核负责最终判断。审核规范中通常要求对疑似样本逐条确认，尤其是灰度内容，需要结合上下文与团队规则处理。</p>
+        </details>
+        <details>
+          <summary>没有审核经验可以上手吗？</summary>
+          <p>可以从规则学习开始。先熟悉判断标准，再在工作台中处理少量样本，逐步建立对边界的把握。软件操作本身并不复杂，经验主要来自对规则的理解和持续复盘。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download">
+    <div class="wrap">
+      <div class="dl">
+        <div>
+          <h2>获取鉴黄师工作台</h2>
+          <p>下载入口正在准备中。当前页面可用于了解鉴黄师下载官网的软件能力与审核流程，安装包地址确定后将在此处更新，届时可直接获取电脑版工作台。</p>
+          <a class="btn btn-primary" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></svg>
+            下载
+          </a>
+        </div>
+        <div class="dl-notes">
+          <span><b>形态：</b>桌面工作台，安装后本地运行</span>
+          <span><b>能力：</b>图片识别、人工复核、记录留存</span>
+          <span><b>提示：</b>安装包发布前请先阅读功能与流程说明</span>
+          <span><b>更新：</b>下载地址确定后于本区域公布</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-col">
+        <div class="logo">
+          <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#ffffff" opacity=".08"/>
+            <circle cx="32" cy="32" r="15" fill="none" stroke="#ffb347" stroke-width="5"/>
+            <circle cx="32" cy="32" r="5" fill="#ffb347"/>
+          </svg>
+          <span>鉴黄师下载官网</span>
+        </div>
+        <p style="margin:0;max-width:26em;">鉴黄师下载官网，提供内容审核工作台的软件说明、审核流程与入门指引，帮助访问者在下载前了解工具的实际用途与使用方式。</p>
+      </div>
+      <div class="ft-col">
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#features">功能概览</a></li>
+          <li><a href="#workflow">审核流程</a></li>
+          <li><a href="#guide">入门指引</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="ft-col">
+        <h4>下载与说明</h4>
+        <ul>
+          <li><a href="#download">下载说明</a></li>
+          <li><a href="#guide">使用前准备</a></li>
+          <li><a href="#faq">系统与版本</a></li>
+          <li><a href="#features">识别与复核</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span>© 鉴黄师下载官网 · 内容审核工具说明页</span>
+      <span>页面信息以软件实际发布说明为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
