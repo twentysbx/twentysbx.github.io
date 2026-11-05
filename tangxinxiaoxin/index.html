@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>糖心小欣奈-糖心小欣奈作品合集_糖心小欣奈内容介绍与更新动态</title>
+<meta name="description" content="糖心小欣奈主题内容介绍页：整理糖心小欣奈的作品合集脉络、内容分区、更新动态与浏览入口，帮助访问者快速了解糖心小欣奈的创作方向与阅读路径。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ff7fa8'/%3E%3Cstop offset='1' stop-color='%23ffb86b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M32 14c3 8 8 12 16 14-8 2-13 6-16 14-3-8-8-12-16-14 8-2 13-6 16-14z' fill='%23fff' opacity='.92'/%3E%3C/svg%3E">
+<style>
+:root{
+  --pink:#ff6f91;
+  --pink-deep:#e0456c;
+  --amber:#ffb86b;
+  --ink:#241a22;
+  --ink-2:#4a3b45;
+  --muted:#7d6b76;
+  --line:#f0dfe6;
+  --bg:#fffafc;
+  --card:#ffffff;
+  --soft:#fff1f6;
+  --radius:18px;
+  --max:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 22px}
+
+/* 页头 */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,250,252,.88);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;min-height:68px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{width:36px;height:36px;border-radius:11px;overflow:hidden;flex-shrink:0}
+.brand-name{
+  font-size:17px;font-weight:800;letter-spacing:.5px;
+  background:linear-gradient(120deg,var(--pink-deep),var(--amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  white-space:nowrap;
+}
+.nav{display:flex;align-items:center;gap:22px;font-size:14.5px;color:var(--ink-2)}
+.nav a{position:relative;padding:4px 0;transition:color .2s}
+.nav a:hover{color:var(--pink-deep)}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;
+  background:linear-gradient(90deg,var(--pink),var(--amber));
+  transition:width .25s;border-radius:2px;
+}
+.nav a:hover::after{width:100%}
+.nav-cta{
+  background:linear-gradient(120deg,var(--pink),var(--amber));
+  color:#fff;font-weight:600;font-size:14px;
+  padding:9px 18px;border-radius:999px;white-space:nowrap;
+  box-shadow:0 6px 16px rgba(255,111,145,.28);
+}
+.menu-btn{
+  display:none;background:none;border:1px solid var(--line);
+  border-radius:10px;padding:7px 10px;cursor:pointer;color:var(--ink-2);
+}
+.menu-btn svg{width:20px;height:20px}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;
+  padding:64px 0 56px;
+  background:
+    radial-gradient(900px 380px at 82% -10%,rgba(255,184,107,.22),transparent 65%),
+    radial-gradient(760px 340px at 8% 8%,rgba(255,111,145,.20),transparent 62%),
+    var(--bg);
+}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:600;color:var(--pink-deep);
+  background:var(--soft);border:1px solid #ffd9e4;
+  padding:5px 14px;border-radius:999px;margin-bottom:20px;
+}
+.eyebrow i{width:6px;height:6px;border-radius:50%;background:var(--pink);display:block}
+h1{
+  font-size:clamp(30px,4.6vw,50px);
+  line-height:1.22;letter-spacing:-.5px;font-weight:900;
+  margin-bottom:18px;
+}
+h1 .grad{
+  background:linear-gradient(115deg,var(--pink-deep) 10%,var(--pink) 48%,var(--amber) 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-lead{font-size:16.5px;color:var(--ink-2);max-width:34em;margin-bottom:28px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:12px 24px;border-radius:999px;font-size:15px;font-weight:600;
+  transition:transform .18s,box-shadow .18s;
+}
+.btn-primary{
+  background:linear-gradient(120deg,var(--pink),var(--amber));
+  color:#fff;box-shadow:0 10px 24px rgba(224,69,108,.26);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(224,69,108,.32)}
+.btn-ghost{border:1.5px solid #ffd2df;color:var(--pink-deep);background:#fff}
+.btn-ghost:hover{background:var(--soft)}
+.btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;pointer-events:none}
+.hero-stats{display:flex;gap:34px;margin-top:36px;flex-wrap:wrap}
+.stat b{display:block;font-size:24px;font-weight:800;color:var(--pink-deep);line-height:1.2}
+.stat span{font-size:13px;color:var(--muted)}
+
+.hero-art{
+  position:relative;border-radius:26px;
+  background:linear-gradient(150deg,#fff3f7,#fff8ef);
+  border:1px solid #ffe3ec;
+  padding:26px;box-shadow:0 24px 60px -28px rgba(224,69,108,.35);
+}
+.hero-art svg{width:100%;height:auto}
+.art-tag{
+  position:absolute;right:18px;bottom:18px;
+  background:#fff;border:1px solid #ffe0ea;border-radius:12px;
+  padding:8px 14px;font-size:12.5px;color:var(--pink-deep);font-weight:600;
+  box-shadow:0 8px 20px -10px rgba(224,69,108,.4);
+}
+
+/* 通用区块 */
+section{padding:64px 0}
+.section-head{max-width:640px;margin-bottom:34px}
+.kicker{
+  font-size:13px;font-weight:700;letter-spacing:2px;
+  color:var(--pink);text-transform:uppercase;margin-bottom:10px;
+}
+h2{font-size:clamp(22px,2.8vw,30px);line-height:1.3;font-weight:800;margin-bottom:12px}
+.section-head p{color:var(--muted);font-size:15px}
+
+/* 内容分区 */
+.topics{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 22px;transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px rgba(224,69,108,.4);border-color:#ffd3e0}
+.card-icon{
+  width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  background:var(--soft);margin-bottom:16px;
+}
+.card-icon svg{width:22px;height:22px}
+.card h3{font-size:17px;font-weight:700;margin-bottom:8px}
+.card p{font-size:14.5px;color:var(--ink-2);line-height:1.72}
+.card .meta{margin-top:14px;font-size:12.5px;color:var(--muted)}
+
+/* 阅读路径 */
+.path-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.path{
+  display:flex;gap:18px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);padding:24px;
+}
+.path-num{
+  flex-shrink:0;width:40px;height:40px;border-radius:50%;
+  display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;
+  background:linear-gradient(135deg,var(--pink),var(--amber));
+}
+.path h3{font-size:16.5px;margin-bottom:6px}
+.path p{font-size:14.5px;color:var(--ink-2)}
+
+/* 更新动态 */
+.updates{background:linear-gradient(180deg,#fff7fa,#fffafc)}
+.update-list{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--line)}
+.update-item{
+  display:grid;grid-template-columns:96px 1fr auto;gap:20px;align-items:baseline;
+  padding:20px 4px;border-bottom:1px solid var(--line);
+}
+.update-date{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.update-item h3{font-size:15.5px;font-weight:700;margin-bottom:4px}
+.update-item p{font-size:14px;color:var(--ink-2)}
+.badge{
+  font-size:12px;font-weight:600;color:var(--pink-deep);
+  background:var(--soft);border:1px solid #ffd9e4;
+  padding:3px 10px;border-radius:999px;white-space:nowrap;
+}
+
+/* 关于/说明 */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.about-grid p{font-size:15px;color:var(--ink-2);margin-bottom:16px}
+.about-grid p:last-child{margin-bottom:0}
+.facts{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.facts h3{font-size:15px;margin-bottom:16px;color:var(--ink)}
+.fact-row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.fact-row:last-child{border-bottom:none}
+.fact-row span:first-child{color:var(--muted)}
+.fact-row span:last-child{font-weight:600;color:var(--ink);text-align:right}
+
+/* 收束 CTA */
+.final{
+  background:linear-gradient(125deg,var(--pink) 0%,#ff8fa8 45%,var(--amber) 100%);
+  color:#fff;border-radius:26px;padding:48px 40px;text-align:center;
+  box-shadow:0 28px 60px -30px rgba(224,69,108,.6);
+}
+.final h2{color:#fff;margin-bottom:12px}
+.final p{color:rgba(255,255,255,.92);max-width:36em;margin:0 auto 26px;font-size:15px}
+.final .btn-ghost{background:#fff;border-color:#fff;color:var(--pink-deep)}
+
+/* 页尾 */
+.site-footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 28px;margin-top:64px}
+.footer-top{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;margin-bottom:30px}
+.footer-brand{max-width:340px}
+.footer-brand .brand{margin-bottom:12px}
+.footer-brand p{font-size:13.5px;color:var(--muted);line-height:1.8}
+.footer-links{display:flex;gap:56px;flex-wrap:wrap}
+.footer-col h4{font-size:13.5px;margin-bottom:12px;color:var(--ink)}
+.footer-col a{display:block;font-size:13.5px;color:var(--muted);padding:4px 0;transition:color .2s}
+.footer-col a:hover{color:var(--pink-deep)}
+.footer-bottom{
+  border-top:1px solid var(--line);padding-top:20px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--muted);
+}
+
+/* 响应式 */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-art{order:-1;max-width:420px;margin:0 auto;width:100%}
+  .card-grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+}
+@media (max-width:720px){
+  .nav{display:none}
+  .nav.open{
+    display:flex;position:absolute;top:68px;left:0;right:0;
+    flex-direction:column;align-items:flex-start;gap:0;
+    background:#fff;border-bottom:1px solid var(--line);
+    padding:8px 22px 16px;box-shadow:0 16px 30px -20px rgba(0,0,0,.2);
+  }
+  .nav.open a{padding:11px 0;width:100%;border-bottom:1px dashed var(--line)}
+  .nav.open a:last-child{border-bottom:none}
+  .nav.open .nav-cta{margin-top:10px;text-align:center;justify-content:center}
+  .menu-btn{display:grid;place-items:center}
+  .hero{padding:40px 0 44px}
+  .hero-actions .btn{flex:1;justify-content:center}
+  .hero-stats{gap:22px}
+  section{padding:48px 0}
+  .card-grid{grid-template-columns:1fr}
+  .path-grid{grid-template-columns:1fr}
+  .update-item{grid-template-columns:1fr;gap:6px}
+  .update-item .badge{justify-self:start}
+  .final{padding:36px 22px;border-radius:20px}
+  .footer-links{gap:32px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="糖心小欣奈 首页">
+      <span class="brand-mark">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff6f91"/>
+              <stop offset="1" stop-color="#ffb86b"/>
+            </linearGradient>
+          </defs>
+          <rect width="64" height="64" rx="16" fill="url(#lg1)"/>
+          <path d="M32 14c3 8 8 12 16 14-8 2-13 6-16 14-3-8-8-12-16-14 8-2 13-6 16-14z" fill="#fff" opacity=".93"/>
+          <circle cx="32" cy="46" r="3.2" fill="#fff" opacity=".75"/>
+        </svg>
+      </span>
+      <span class="brand-name">糖心小欣奈</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#topics">内容分区</a>
+      <a href="#path">阅读路径</a>
+      <a href="#updates">更新动态</a>
+      <a href="#about">主题说明</a>
+      <a class="nav-cta" href="#start">开始浏览</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="展开导航" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <path d="M4 7h16M4 12h16M4 17h16"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow"><i></i>主题内容首页 · 持续整理</span>
+        <h1><span class="grad">糖心小欣奈</span></h1>
+        <p class="hero-lead">
+          这是一个围绕糖心小欣奈展开的内容索引页。我们把糖心小欣奈的作品脉络、内容分区与阅读顺序集中在一处，
+          方便第一次接触的访问者快速建立印象，也方便回访的读者按栏目直接找到想看的部分。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#topics">
+            浏览内容分区
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#updates">查看更新动态</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>3</b><span>内容分区</span></div>
+          <div class="stat"><b>4</b><span>阅读路径</span></div>
+          <div class="stat"><b>1</b><span>主题索引页</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 360 300" role="img">
+          <defs>
+            <linearGradient id="a1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff6f91"/><stop offset="1" stop-color="#ffb86b"/>
+            </linearGradient>
+            <linearGradient id="a2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#ffe6ee" stop-opacity=".7"/>
+            </linearGradient>
+          </defs>
+          <rect x="26" y="34" width="308" height="232" rx="22" fill="url(#a2)" stroke="#ffd6e3"/>
+          <circle cx="112" cy="118" r="44" fill="url(#a1)" opacity=".9"/>
+          <path d="M112 86c6 15 15 22 30 26-15 4-24 11-30 26-6-15-15-22-30-26 15-4 24-11 30-26z" fill="#fff" opacity=".92"/>
+          <rect x="182" y="92" width="112" height="12" rx="6" fill="#ffb7ca"/>
+          <rect x="182" y="116" width="84" height="10" rx="5" fill="#ffd3e0"/>
+          <rect x="182" y="138" width="100" height="10" rx="5" fill="#ffe1ea"/>
+          <rect x="62" y="190" width="232" height="12" rx="6" fill="#ffd3e0"/>
+          <rect x="62" y="214" width="176" height="10" rx="5" fill="#ffe6ee"/>
+          <circle cx="300" cy="196" r="16" fill="url(#a1)" opacity=".85"/>
+        </svg>
+        <span class="art-tag">主题索引 · 糖心小欣奈</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容分区 -->
+  <section class="topics" id="topics">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Content</div>
+        <h2>糖心小欣奈的内容分区</h2>
+        <p>糖心小欣奈的内容按用途拆成三块：先认识人物与风格，再看作品合集，最后看更新与延伸阅读。每一块承担不同的信息任务，互不重复。</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#e0456c" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+          </div>
+          <h3>人物与风格印象</h3>
+          <p>从最基础的信息开始：糖心小欣奈是谁、内容大概是什么样子、适合什么样的阅读节奏。这一块不堆细节，只负责帮你判断要不要继续往下看。</p>
+          <div class="meta">适合首次访问</div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#e0456c" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 5h16v14H4z"/><path d="M4 9h16M9 5v14"/>
+            </svg>
+          </div>
+          <h3>作品合集脉络</h3>
+          <p>把糖心小欣奈的合集按主题归拢，说明每一组内容的侧重点与年代顺序。合集页是回访读者最常停的位置，因此这里给出的是一张可逐条对照的清单式结构。</p>
+          <div class="meta">适合按主题查找</div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#e0456c" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4"/>
+            </svg>
+          </div>
+          <h3>更新与延伸阅读</h3>
+          <p>记录糖心小欣奈相关内容的整理进度与新增条目，同时列出可以继续延伸的阅读方向。更新记录只写已发生的变化，不预告尚未确认的安排。</p>
+          <div class="meta">适合定期回访</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 阅读路径 -->
+  <section id="path">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Reading Path</div>
+        <h2>按你的目的选择阅读路径</h2>
+        <p>不同访问者对糖心小欣奈的需求并不一样。下面四条路径分别对应“先了解”“想找合集”“只想看更新”“随手翻翻”四种场景，按需进入即可。</p>
+      </div>
+
+      <div class="path-grid">
+        <div class="path">
+          <div class="path-num">01</div>
+          <div>
+            <h3>第一次来：先读概览</h3>
+            <p>从首屏与“人物与风格印象”开始，三分钟内建立对糖心小欣奈的整体认知，再决定是否深入合集部分。</p>
+          </div>
+        </div>
+        <div class="path">
+          <div class="path-num">02</div>
+          <div>
+            <h3>有明确目标：直奔合集</h3>
+            <p>已经知道想找哪一类内容，直接进入“作品合集脉络”，按主题分组逐条核对，跳过介绍性文字。</p>
+          </div>
+        </div>
+        <div class="path">
+          <div class="path-num">03</div>
+          <div>
+            <h3>老读者：只看动态</h3>
+            <p>从“更新动态”进入，关注糖心小欣奈相关条目的新增与调整记录，用最短路径完成一次回访。</p>
+          </div>
+        </div>
+        <div class="path">
+          <div class="path-num">04</div>
+          <div>
+            <h3>没有目的：顺序通读</h3>
+            <p>按页面从上到下的顺序阅读，先分区、再路径、再动态，最后看主题说明，形成完整印象。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 更新动态 -->
+  <section class="updates" id="updates">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Updates</div>
+        <h2>糖心小欣奈的更新动态</h2>
+        <p>以下记录只反映本页已完成的内容整理工作，按整理顺序排列。条目数量与范围以实际发布为准，未完成的部分不会提前写入。</p>
+      </div>
+
+      <div class="update-list">
+        <div class="update-item">
+          <span class="update-date">第一期</span>
+          <div>
+            <h3>主题索引页建立</h3>
+            <p>完成糖心小欣奈首页的整体框架：品牌区、首屏介绍、内容分区与阅读路径四部分先行落地，作为后续内容的固定入口。</p>
+          </div>
+          <span class="badge">已完成</span>
+        </div>
+        <div class="update-item">
+          <span class="update-date">第二期</span>
+          <div>
+            <h3>内容分区细化</h3>
+            <p>把糖心小欣奈的内容拆为“人物与风格印象”“作品合集脉络”“更新与延伸阅读”三块，并为每块标注适用场景，减少查找成本。</p>
+          </div>
+          <span class="badge">已完成</span>
+        </div>
+        <div class="update-item">
+          <span class="update-date">第三期</span>
+          <div>
+            <h3>阅读路径说明补充</h3>
+            <p>新增四条阅读路径，覆盖首次访问、目标查找、定期回访与顺序通读四种需求，与内容分区形成对应关系。</p>
+          </div>
+          <span class="badge">已完成</span>
+        </div>
+        <div class="update-item">
+          <span class="update-date">后续</span>
+          <div>
+            <h3>合集条目持续补充</h3>
+            <p>糖心小欣奈的合集清单将按主题分批整理，补充完成后在“作品合集脉络”中同步体现，具体条目以实际上线内容为准。</p>
+          </div>
+          <span class="badge">整理中</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主题说明 -->
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">About</div>
+        <h2>关于这个糖心小欣奈主题页</h2>
+        <p>这一栏说明页面本身的定位与边界，避免把索引页误当成内容仓库。</p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>本页是一个以糖心小欣奈为主题的索引型首页。它的职责是把分散的信息按访问目的重新组织，而不是把全部内容一次性铺开。因此你会看到分区、路径与更新记录，而不是无差别的长列表。</p>
+          <p>页面上的所有描述都限定在“本页已整理的范围”内。关于糖心小欣奈的作品数量、具体篇目与发布时间，只有在实际条目上线后才会给出对应说明；在此之前，相关位置保持待补充状态，不作推测。</p>
+          <p>如果你只是路过，读首屏就够了；如果你想找具体内容，走“作品合集脉络”；如果你在等新东西，盯住“更新动态”即可。三种用法对应三种阅读深度，这也是本页把栏目拆开的原因。</p>
+        </div>
+
+        <aside class="facts">
+          <h3>页面信息一览</h3>
+          <div class="fact-row"><span>主题对象</span><span>糖心小欣奈</span></div>
+          <div class="fact-row"><span>页面类型</span><span>主题索引首页</span></div>
+          <div class="fact-row"><span>内容分区</span><span>3 个</span></div>
+          <div class="fact-row"><span>阅读路径</span><span>4 条</span></div>
+          <div class="fact-row"><span>更新记录</span><span>按整理顺序</span></div>
+          <div class="fact-row"><span>资料范围</span><span>以已整理内容为准</span></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 收束 -->
+  <section id="start" style="padding-top:0">
+    <div class="wrap">
+      <div class="final">
+        <h2>从内容分区开始了解糖心小欣奈</h2>
+        <p>先看分区建立印象，再按路径找到你需要的那一块。糖心小欣奈的内容会随整理进度逐步补充，本页保持同步更新。</p>
+        <div class="hero-actions" style="justify-content:center">
+          <a class="btn btn-ghost" href="#topics">回到内容分区</a>
+          <a class="btn" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1" style="background:#fff;color:var(--pink-deep);border:1.5px solid #fff">下载主题</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="brand-mark">
+            <svg viewBox="0 0 64 64" aria-hidden="true">
+              <defs>
+                <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ff6f91"/>
+                  <stop offset="1" stop-color="#ffb86b"/>
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="url(#lg2)"/>
+              <path d="M32 14c3 8 8 12 16 14-8 2-13 6-16 14-3-8-8-12-16-14 8-2 13-6 16-14z" fill="#fff" opacity=".93"/>
+            </svg>
+          </span>
+          <span class="brand-name">糖心小欣奈</span>
+        </a>
+        <p>糖心小欣奈主题索引页，按访问目的组织内容分区、阅读路径与更新记录，帮助你在最短时间内找到想看的部分。</p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>页面导航</h4>
+          <a href="#topics">内容分区</a>
+          <a href="#path">阅读路径</a>
+          <a href="#updates">更新动态</a>
+        </div>
+        <div class="footer-col">
+          <h4>相关说明</h4>
+          <a href="#about">主题说明</a>
+          <a href="#start">开始浏览</a>
+          <a href="#top">回到顶部</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 糖心小欣奈 主题索引页</span>
+      <span>内容以实际整理进度为准</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var btn = document.getElementById('menuBtn');
+    var nav = document.getElementById('nav');
+    if(!btn || !nav) return;
+    btn.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? '收起导航' : '展开导航');
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && nav.classList.contains('open')){
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded','false');
+        btn.setAttribute('aria-label','展开导航');
+      }
+    });
+  })();
+</script>
+
+</body>
+</html>
